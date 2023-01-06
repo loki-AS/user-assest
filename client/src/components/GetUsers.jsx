@@ -7,7 +7,7 @@ const GetUsers = () => {
   const [listOfUsers, setListOfUsers] = useState([]);
 
   const getUser = async() => {
-    await axios.get("http://localhost:3001/getUsers").then((response) => {
+    await axios.get("https://user-mern.onrender.com/getUsers").then((response) => {
       setListOfUsers(response.data);
     });
   }
