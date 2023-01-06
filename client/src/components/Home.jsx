@@ -10,7 +10,7 @@ const Home = () => {
 
     const handleSubmit = () => {
         
-        axios.post("https://user-mern.onrender.com", {
+        axios.post("https://user-mern.onrender.com/createUser", {
             name,
             address
         }).then((response) => {
